@@ -16,18 +16,18 @@ let currentTime = 0;
 
 const playList = [
   {
-    src: "/music/lost-in-city-lights-145038.mp3",
+    src: "music/lost-in-city-lights-145038.mp3",
     type: "audio/ogg",
     title: "Lost in the City Lights",
     artist: "Cosmo Sheldrake",
-    cover: "/images/cover-1.png",
+    cover: "images/cover-1.png",
   },
   {
-    src: "/music/forest-lullaby-110624.mp3",
+    src: "music/forest-lullaby-110624.mp3",
     type: "audio/ogg",
     title: "Forest Lullaby",
     artist: "Lesfm",
-    cover: "/images/cover-2.png",
+    cover: "images/cover-2.png",
   },
 ];
 
