@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Music Player</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="any">
+</head>
+
+<body>
+  <main>
+    <audio id="audioPlayer">
+      <source src="music/lost-in-city-lights-145038.mp3" type="audio/ogg">
+    </audio>
+    <section class="song-cover">
+      <img class="cover-image" src="images/cover-1.png" alt="cover image">
+    </section>
+    <section class="song-info">
+      <h1 class="song-title"></h1>
+      <p class="song-artist"></p>
+    </section>
+    <section class="song-progress">
+      <div class="song-duration">
+        <p class="played-time">00:00</p>
+        <p class="total-time">00:00</p>
+      </div>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </section>
+    <section class="song-controls">
+      <div class="previous-button">
+        <img src="images/Stop_and_play_fill-1.svg" alt="previous button icon">
+      </div>
+      <div class="play-pause-button">
+        <img id="play-pause-btn" src="images/play_icon.svg" alt="play pause icon">
+      </div>
+      <div class="next-button">
+        <img src="images/Stop_and_play_fill_reverse.svg" alt="next button icon">
+      </div>
+
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

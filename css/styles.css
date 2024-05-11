@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add some styles for body*/
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    background-image: url("/images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: grid;
+    padding: 1.5rem;
+    place-items: center;
+    overflow-x: hidden;
+}
+
+main {
+  width: min(100%,400px);
+  background-color: #212936;
+  padding: 1.25rem;
+  border-radius: 1rem;
+}
+.song-cover{
+    width: 100%;
+}
+.cover-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    aspect-ratio: 1/1;
+}
+.song-info{
+    text-align: center;
+    margin-block-start: 16px;
+    margin-block-end: 24px;
+}
+.song-title{
+  font-size:1rem;
+}
+.song-artist{
+  margin-block-start: 0.25rem;
+  font-size: 0.75rem;
+  color: #4D5562;
+  font-weight: 700;
+}
+.song-progress{
+    /* height: 1.27rem; */
+}
+ .progress-bar{
+    width: 100%;
+    height: 4px;
+    border-radius:2rem;
+    background-color: #fff;
+    margin-block-start: 0.25rem;
+    position: relative;
+}
+ .progress:hover, .progress-bar:hover{
+    cursor: pointer;
+}
+ .progress{
+    height: 4px;
+    position: absolute;
+    z-index: 999;
+    transition: width 0.12s ease-in-out;
+    border-radius:2rem; 
+    background-color: #C93B76;
+    box-shadow: 0 0 14px -1px #C93B76;
+} 
+.song-duration{
+    display: flex;
+    justify-content: space-between;
+}
+.played-time, .total-time{
+  font-size: 0.625rem;
+  color: #4D5562;
+  font-weight: 700;
+}
+.song-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 2.25rem;
+    margin-block-end: 0.5rem;
+    cursor: pointer;
+}
+.play-pause-button{
+    width: 3.15rem;
+    height: 3.15rem;
+    background-color: #C93B76;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-inline: 1.25rem; 
+    box-shadow: 0 3px 29px -5px #C93B76;
+    cursor: pointer;
+}
+#play-pause-btn{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+
+
+/* 
+.title::after {
+    content: "";
+    background: url('../images/blur-bg.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -130px;
+    right: -75px;
+    width: 500px;
+    height: 250px;
+    opacity: 0.5;
+} */
+
+
+/* @media screen and (min-width: 720px) {
+    .logo {
+        display: initial;
+    }
+
+    .get-started {
+        width: auto;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+  } */
